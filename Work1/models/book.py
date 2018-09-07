@@ -8,9 +8,9 @@ class Book(models.Model):
 
     bookName = fields.Char(string="Book title", required=True)
     isbnCode = fields.Char(string="ISBN Code", required=True)
-    publishYear = fields.Integer(string="Year of publish")
+    publishYear = fields.Date(string="Year of publish")
 
-#    loaner = fields.Many2one('res.partner',string="On loan to")
+    loaner = fields.Many2one('res.partner',string="On loan to")
 
 # checking that the ISBN Code is unique
     _sql_constraints = [

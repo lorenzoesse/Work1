@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="course_form_view">
+        <record model="ir.ui.view" id="book_form_view">
             <field name="name">book.form</field>
             <field name="model">book</field>
             <field name="arch" type="xml">
@@ -11,10 +11,12 @@
                             <field name="bookName"/>
                             <field name="publishYear"/>
                             <field name="isbnCode"/>
+                            <field name="loaner"/>
                         </group>
                     </sheet>
                 </form>
            </field>
         </record>
+        <menuitem id="work1_page" name="Work1 Page" parent="base.menu_custom"/>
     </data>
 </odoo>
