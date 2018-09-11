@@ -9,6 +9,7 @@ class Book(models.Model):
     bookName = fields.Char(string="Book title", required=True)
     isbnCode = fields.Char(string="ISBN Code", required=True)
     publishYear = fields.Date(string="Year of publish")
+    author = fields.Char(string="Author", required=True)
 
     loaner = fields.Many2one('res.partner',string="On loan to")
 
